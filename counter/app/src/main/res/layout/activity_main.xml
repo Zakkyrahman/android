@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btndown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#434343"
+        android:onClick="btndown"
         android:text="Counter Down"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -23,11 +24,12 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#434343"
+        android:onClick="btnup"
         android:text="Counter Up"
         android:textColorLink="#666666"
         android:textStyle="bold"
@@ -38,14 +40,14 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvhasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="96sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btndown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
