@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">kalkulator</string>
+    <string name="my_edit_text_hint" />
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="BTNkurang"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="0"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETbil1"
+        android:layout_width="366dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Enter number"
+        android:ems="10"
+        android:hint="Enter number"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ETbil2"
+        android:layout_width="363dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Enter Number"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:importantForAccessibility="yes"
+        android:inputType="numberDecimal"
+        android:labelFor="@+id/ETbil2" />
+
+
+    <Button
+        android:id="@+id/BTNtambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="BTNtambah"
+        android:text="Penjumlahan" />
+
+    <Button
+        android:id="@+id/BTNkurang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Pengurangan" />
+
+    <Button
+        android:id="@+id/BTNkali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Perkalian" />
+
+    <Button
+        android:id="@+id/BTNbagi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#009688"
+        android:text="Pembagian" />
+
+</LinearLayout>
